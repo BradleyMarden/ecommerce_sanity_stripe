@@ -1,17 +1,18 @@
 {
   "root": true,
+  "api": {
+    "projectId": "4kyal4j2",
+    "dataset": "production"
+  },
   "project": {
     "name": "ecommerce"
-  },
-  "api": {
-    "projectId": "vfxfwnaw",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "note-field"
   ],
   "env": {
     "development": {

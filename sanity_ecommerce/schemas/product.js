@@ -35,6 +35,21 @@ export default {
       name: 'details',
       title: 'Details',
       type: 'string',
-    }
+    },
+    {
+      name: 'isBestSeller',
+      title: 'IsBestSeller',
+      type: 'boolean',
+    },
+    {
+      name: 'isOnSale',
+      title: 'IsOnSale',
+      type: 'boolean',
+    },
+    {
+      name: 'onSalePercent',
+      title: 'OnSalePercent',
+      type: 'number',
+    },
   ]
 }

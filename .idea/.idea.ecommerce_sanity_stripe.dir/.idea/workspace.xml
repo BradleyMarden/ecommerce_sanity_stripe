@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56bd4e72-a867-470c-835c-8d3d8d93a38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeroBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeroBanner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/stripe.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/stripe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/config/.checksums" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/config/.checksums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/sanity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2YoJpHhQRKu70PsCPH9vSuPnZ6G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\brads\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\brads\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\brads\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56bd4e72-a867-470c-835c-8d3d8d93a38e" name="Changes" comment="" />
+      <created>1701186180798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701186180798</updated>
+      <workItem from="1701186183131" duration="3039000" />
+      <workItem from="1701256199137" duration="17956000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

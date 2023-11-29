@@ -1,3 +1,5 @@
+import {FiAlertCircle} from "react-icons/all";
+
 export default {
   name: 'banner',
   title: 'Banner',
