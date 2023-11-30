@@ -3,11 +3,19 @@ import Link from 'next/link';
 import { urlFor } from '../lib/client';
 import logo from '../public/assets/logo.png'
 import Image from "next/image";
+import {Product} from "./index";
 const HeroBanner = ({ heroBanner }) => {
   return (
       <div className="hero-banner-container">
           <div className="hero-banner-image">
             <Image src={logo} alt="logo"  />
+          </div>
+          <div className="banner-container">
+              <div className="marquee">
+                  <div className="banner-container-scroll- banner-scroll">
+                    <h2> NEWS: New vw converstion</h2>
+                  </div>
+              </div>
           </div>
       </div>
       

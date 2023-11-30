@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56bd4e72-a867-470c-835c-8d3d8d93a38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/note.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LandingCover.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/logo_black.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ecommerce_sanity_stripe.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecommerce_sanity_stripe.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HeroBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeroBanner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/stripe.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/stripe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/config/.checksums" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/config/.checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/sanity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701186180798</updated>
       <workItem from="1701186183131" duration="3039000" />
-      <workItem from="1701256199137" duration="17956000" />
+      <workItem from="1701256199137" duration="24877000" />
     </task>
     <servers />
   </component>
