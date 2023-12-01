@@ -5,6 +5,7 @@ import { Product, FooterBanner, HeroBanner, LandingCover,ImageCarousel, AboutUs}
 
 const Home = ({ products, bannerData }) => (
   <div>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker"/>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
       <ImageCarousel heroBanner={bannerData.length && bannerData[0]}  />
       <AboutUs heroBanner={bannerData.length && bannerData[0]}  />
