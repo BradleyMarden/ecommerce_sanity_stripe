@@ -25,18 +25,50 @@ width: 100%;
   padding: 10px;
   background-color: #f3ffff;
 }
+.image-carousel-container{
+  background-color: #6c928f;
+  border-radius: 15px;
+}
 .image-carousel{
-
-   width: 100%;
-    height: 100%;
-  outline-style: dashed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+}
+.about-us-container{
+  background-color: #b2f0ec;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.about-us-para{
+  text-align: center;
+  background-color: #3c4758;
+border-radius: 15px;  
+  margin: 2vh;
+  color: #3edacf;
+}
+.about-us-text{
+  background-color: #3edacf;
+  border-radius: 15px;
+  color: #3c4758;
+  padding: 2vh;
 }
 .carousel-style {
-  height: 100% !important;
+  height: 99% !important;
+  border-color: #3edacf;
+  border-radius: 15px;
+  border-width: 10px;
+  border-style: solid;
 }
 
 .carousel-item{
-  height: 80vh;
+  height: 50vh;
+  border-style: solid;
 }
 
 .navbar-container{
@@ -52,7 +84,7 @@ width: 100%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  
+  background-size: cover;
 }
 .marquee-text{
   font-size: 29px;
@@ -63,7 +95,8 @@ width: 100%;
 .marquee {
   position: relative;
   height: 400px;
-  width: 100%;
+  width: 120%;
+  margin-left:-20%;
   overflow-x: hidden;
 }
 .banner-container {
@@ -82,9 +115,26 @@ width: 100%;
 .banner-scroll {
   position: absolute;
   white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  width: 230%;
+  
+}
+.banner-scroll1 {
+  position: absolute;
+  white-space: nowrap;
   will-change: transform;
   animation: marquee 10s linear infinite;
-  width: 210%;
+  width: 230%;
+  animation-delay: 3.3s;
+}
+.banner-scroll2 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+  width: 230%;
+  animation-delay: 6.6s;
+  
 }
 .banner-container-scroll- {
   display: flex;
@@ -253,7 +303,9 @@ width: 100%;
   cursor: pointer;
   z-index:10000 !important;
 }
-
+hero-banner-container h2 {
+  color: blue;
+}
 .hero-banner-container h3{
   font-size: 4rem;
   margin-top: 4px;
@@ -722,6 +774,56 @@ margin-top: 160px;
 }
 
 @media screen and (max-width:800px) {
+  .marquee {
+    margin-left:-100%;
+    width: 250%;
+    
+  }
+  .banner-scroll {
+    animation: marquee 12s linear infinite;
+    width: 300%;
+
+  }
+  .banner-scroll1 {
+    animation: marquee 12s linear infinite;
+    width: 300%;
+    color: red;
+    animation-delay:6s;
+  }
+  .banner-scroll2 {
+    animation: marquee 10s linear infinite;
+    width: 230%;
+    animation-delay: 6.6s;
+
+  }
+  .banner-container {
+   
+    height: 4vh;
+    top: 130%;
+
+  }
+  .image-carousel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+  }
+  .carousel-style {
+    height: 98% !important;
+    border-color: #3edacf;
+    border-radius: 15px;
+    border-width: 10px;
+    border-style: solid;
+  }
+
+  .carousel-item{
+    height: 31.8vh;
+    border-style: solid;
+  }
   .hero-banner-container{
     height: 8vh;
   }

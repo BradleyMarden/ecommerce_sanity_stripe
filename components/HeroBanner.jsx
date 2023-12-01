@@ -13,8 +13,14 @@ const HeroBanner = ({ heroBanner }) => {
           <div className="banner-container">
               <div className="marquee">
                   <div className="banner-container-scroll- banner-scroll">
-                    <h2> NEWS: New vw converstion</h2>
+                    <h2> CHIRSTMAS SALE! Use code CHR10 for 10% all purchases</h2>
                   </div>
+                  <div className="banner-container-scroll- banner-scroll1">
+                      <h2> CHIRSTMAS SALE! Use code CHR10 for 10% all purchases</h2>
+                  </div>
+                  {/*<div className="banner-container-scroll- banner-scroll2">*/}
+                  {/*    <h2> CHIRSTMAS SALE! Use code CHR10 for 10% all purchases</h2>*/}
+                  {/*</div>*/}
               </div>
           </div>
       </div>
