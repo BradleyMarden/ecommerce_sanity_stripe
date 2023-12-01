@@ -117,6 +117,7 @@ border-radius: 15px;
   white-space: nowrap;
   animation: marquee 10s linear infinite;
   width: 230%;
+  color: #3c4758;
   
 }
 .banner-scroll1 {
@@ -126,6 +127,8 @@ border-radius: 15px;
   animation: marquee 10s linear infinite;
   width: 230%;
   animation-delay: 3.3s;
+  color: #3c4758;
+  
 }
 .banner-scroll2 {
   position: absolute;
@@ -139,6 +142,8 @@ border-radius: 15px;
 .banner-container-scroll- {
   display: flex;
   justify-content: center;
+  color: #3c4758;
+  
 }
 .marqueea {
   margin: 0 auto;
@@ -776,7 +781,7 @@ margin-top: 160px;
 @media screen and (max-width:800px) {
   .marquee {
     margin-left:-100%;
-    width: 250%;
+    width: 310%;
     
   }
   .banner-scroll {
@@ -787,14 +792,12 @@ margin-top: 160px;
   .banner-scroll1 {
     animation: marquee 12s linear infinite;
     width: 300%;
-    color: red;
     animation-delay:6s;
   }
   .banner-scroll2 {
-    animation: marquee 10s linear infinite;
-    width: 230%;
-    animation-delay: 6.6s;
-
+    animation: marquee 12s linear infinite;
+    width: 300%;
+    animation-delay: 12s;
   }
   .banner-container {
    
