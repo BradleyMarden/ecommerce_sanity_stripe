@@ -99,6 +99,12 @@ border-radius: 15px;
   margin-left:-20%;
   overflow-x: hidden;
 }
+.marquee11 {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+}
 .banner-container {
   float:right;
   height: 2vh;
