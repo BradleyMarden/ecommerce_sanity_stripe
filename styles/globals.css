@@ -782,6 +782,13 @@ margin-top: 160px;
   .marquee {
     margin-left:-100%;
     width: 310%;
+
+  }
+  .marquee11 {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
     
   }
   .banner-scroll {
