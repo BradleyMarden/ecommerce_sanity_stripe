@@ -794,7 +794,6 @@ margin-top: 160px;
   .banner-scroll {
     animation: marquee 12s linear infinite;
     width: 300%;
-
   }
   .banner-scroll1 {
     animation: marquee 12s linear infinite;
