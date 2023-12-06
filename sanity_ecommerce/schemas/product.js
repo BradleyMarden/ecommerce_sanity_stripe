@@ -51,5 +51,12 @@ export default {
       title: 'OnSalePercent',
       type: 'number',
     },
+    {
+      name: "categories",
+      title: "Categories",
+      type: "array",
+      of: [{ type: "reference", to: { type: "category" } }],
+      validation: Rule => Rule.required()
+    },
   ]
 }
