@@ -23,6 +23,7 @@ const CategoryDetails = ({ product, category }) => {
                 }
                 }} >
                     <AiOutlineLeft />
+                    <span>Back</span>
                     
                 </button>
                 <h1 className="category-items-container-header-text">

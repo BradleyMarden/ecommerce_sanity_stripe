@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import {AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, AiOutlineLeft} from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
 import {HeroBanner, Product} from '../../components';
 import { useStateContext } from '../../context/StateContext';
+import {useRouter} from "next/router";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+  const router = useRouter()
 
   const handleBuyNow = () => {
     onAdd(product, qty);
@@ -19,8 +21,21 @@ const ProductDetails = ({ product, products }) => {
   return (
     <div>
       <HeroBanner/>
-      
+      <div>
+        <button type="button" className="back-button" onClick={() =>{
+          if (window.history.state && window.history.state.idx > 0) {
+            router.back();
+          } else {
+            console.log("in")
+            router.back();
+          }
+        }} >
+          <AiOutlineLeft/>
+          <span>Back</span>
+        </button>
+      </div>
       <div className="product-detail-container">
+        
         <div>
           <div className="image-container">
             <img src={urlFor(image && image[index])} className="product-detail-image" />
