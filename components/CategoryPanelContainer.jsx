@@ -11,8 +11,8 @@ const CategoryPanelContainer = ({ categories }) => {
       <div>
           <div>
               <div className="category-panel-container">
-                  {categories.map(cat => (
-                      <CategoryPanel category={cat}/>
+                  {categories?.map(cat => (
+                      <CategoryPanel key = {cat} category={cat}/>
                   ))}
               </div>
           </div>

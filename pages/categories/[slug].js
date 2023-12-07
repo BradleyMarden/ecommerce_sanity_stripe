@@ -18,10 +18,11 @@ const CategoryDetails = ({ product, category }) => {
                     if (window.history.state && window.history.state.idx > 0) {
                     router.back();
                 } else {
-                        console.log("in")
-                        router.back();
+                    console.log("in")
+                    router.back();
                 }
-                }} >
+                }
+                } >
                     <AiOutlineLeft />
                     <span>Back</span>
                     
