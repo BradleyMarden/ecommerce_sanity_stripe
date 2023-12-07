@@ -15,12 +15,12 @@ const Home = ({ products, bannerData,categoryData }) => (
       <p>Checkout some of our best selling merch</p>
     </div>
 
-    {/*<div className="products-container">*/}
-    {/*  {products?.map((product) => {*/}
-    {/*      if(product.isBestSeller)*/}
-    {/*        return <Product key={product._id} product={product} />*/}
-    {/*  })}*/}
-    {/*</div>*/}
+    <div className="products-container">
+      {products?.map((product) => {
+          if(product.isBestSeller)
+            return <Product key={product._id} product={product} />
+      })}
+    </div>
 
   </div>
 );

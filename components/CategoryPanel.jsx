@@ -17,6 +17,7 @@ const CategoryPanel = ({ category }) => {
                         height={250}
                         className="product-image"
                     />
+                    <h2 className= "product-card-title">{title}</h2>
                 </div>
             </Link>
         </div>
