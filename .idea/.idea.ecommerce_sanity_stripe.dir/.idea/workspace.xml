@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="56bd4e72-a867-470c-835c-8d3d8d93a38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ecommerce_sanity_stripe.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecommerce_sanity_stripe.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CategoryPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CategoryPanelContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryPanelContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_ecommerce/schemas/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_ecommerce/schemas/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
       <workItem from="1701186183131" duration="3039000" />
       <workItem from="1701256199137" duration="24877000" />
       <workItem from="1701876570395" duration="4224000" />
-      <workItem from="1701988108965" duration="8385000" />
+      <workItem from="1701988108965" duration="9855000" />
     </task>
     <servers />
   </component>
