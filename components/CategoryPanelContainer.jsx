@@ -9,17 +9,19 @@ const CategoryPanelContainer = ({ categories }) => {
     let cate = categories[0]
     return (
       <div>
-          <div>
+          <div className= "category-s">
+              <h3 className= "category-panel-header">Categories</h3>
               <div className="category-panel-container">
                   {categories?.map(cat => (
                       <CategoryPanel key = {cat} category={cat}/>
                   ))}
+                  {/*{categories.map(cat => (*/}
+                  {/*    <CategoryPanel category={cat}/>*/}
+                  {/*))}*/}
               </div>
           </div>
           
-          {/*{categories.map(cat => (*/}
-          {/*    <CategoryPanel category={cat}/>*/}
-          {/*))}*/}
+        
       </div>
      
         

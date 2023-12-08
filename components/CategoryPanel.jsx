@@ -10,14 +10,10 @@ const CategoryPanel = ({ category }) => {
     return (
         <div>
             <Link href={`/categories/${slug.current}`}>
-                <div className="product-card">
-                    <img
-                        src={urlFor(image)}
-                        width={250}
-                        height={250}
-                        className="product-image"
-                    />
+                <div className="product-card-large">
                     <h2 className= "product-card-title">{title}</h2>
+                    <h3 className= "product-card-desc">{description}</h3>
+                    <img src={urlFor(image)} className="product-image-cat"/>
                 </div>
             </Link>
         </div>
