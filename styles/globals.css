@@ -103,7 +103,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
-  height: 55vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   padding-top: 3vh;
@@ -134,14 +134,13 @@ width: 100%;
 .carousel-style {
   height: 99% !important;
   border-color: #3edacf;
-  border-radius: 15px;
   border-width: 10px;
   border-style: solid;
   
 }
 
 .carousel-item{
-  height: 50vh;
+  height: 60vh;
   border-style: solid;
 }
 
@@ -976,7 +975,6 @@ margin-top: 160px;
   .carousel-style {
     height: 98% !important;
     border-color: #3edacf;
-    border-radius: 15px;
     border-width: 10px;
   }
 
