@@ -19,6 +19,7 @@ export default {
             validation: Rule => Rule.required()
         },
         {
+            
             name: "description",
             title: "Description",
             type: "text"
