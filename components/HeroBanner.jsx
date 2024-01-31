@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import {client} from "../lib/client";
 import cook from "js-cookie";
 const HeroBanner = ({ heroBanner, products, cart }) => {
+    router = useRouter();
 
     const { setCart,showCart,showMenu, setShowMenu, setShowCart, totalQuantities, cartItemsload,setPurchaseComplete} = useStateContext();
     let isMobile = undefined;
@@ -36,7 +37,6 @@ const HeroBanner = ({ heroBanner, products, cart }) => {
     if (typeof window !== "undefined") {
         isMobile = window.matchMedia("(max-width: 600px)").matches;
         console.log("isMobile: " + isMobile)
-        router = useRouter();
     }
     const myRef = useRef();
     
