@@ -14,11 +14,12 @@ import { useRouter } from "next/router";
 import {client} from "../lib/client";
 import cook from "js-cookie";
 const HeroBanner = ({ heroBanner, products, cart }) => {
-    router = useRouter();
 
     const { setCart,showCart,showMenu, setShowMenu, setShowCart, totalQuantities, cartItemsload,setPurchaseComplete} = useStateContext();
     let isMobile = undefined;
     let router = undefined
+    router = useRouter();
+    
     console.log(cart)
     let it = cook.get('cartItems')
     let itemsss
