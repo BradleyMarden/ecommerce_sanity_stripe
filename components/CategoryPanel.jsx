@@ -10,11 +10,11 @@ const CategoryPanel = ({ category }) => {
     return (
         <div>
             <Link href={`/categories/${slug.current}`}>
-                <div className="product-card-large">
+                    <div className="product-card-large">
                     <h2 className= "product-card-title">{title}</h2>
                     <h3 className= "product-card-desc">{description}</h3>
                     <img src={urlFor(image)} className="product-image-cat"/>
-                </div>
+                    </div>
             </Link>
         </div>
     )

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2023 Slo Rides All rights reserverd - Created by Cyrex Studios.
+      <p style={{color: "white"}}>2023 Slo Rides All rights reserverd - Created by Cyrex Studios.
           <Image
           className="image"
           src = '/assets/CS_logo.png'

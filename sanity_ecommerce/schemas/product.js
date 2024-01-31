@@ -50,12 +50,29 @@ export default {
       name: 'onSalePercent',
       title: 'OnSalePercent',
       type: 'number',
+      hidden: ({ parent }) => parent?.isOnSale !== true,
+      validation: (Rule) => Rule.custom((value, { document: { isOnSale } }) => {
+        return isOnSale && !value ? "Field required" : true
+      })
+    },
+    {
+      name: 'quantity',
+      title: 'Quantity',
+      type: 'number',
+      validation: Rule => Rule.required("Please set a quantity")
     },
     {
       name: "categories",
       title: "Categories",
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],
+      validation: Rule => Rule.required()
+    },
+    {
+      name: "filters",
+      title: "Filters",
+      type: "array",
+      of: [{ type: "reference", to: { type: "filters" } }],
       validation: Rule => Rule.required()
     },
   ]

@@ -10,11 +10,13 @@ import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove, setPurchaseComplete } = useStateContext();
 
   const handleCheckout = async () => {
-    const stripe = await getStripe();
 
+    
+    const stripe = await getStripe();
+    console.log("STRINGGG" + JSON.stringify(cartItems))
     const response = await fetch('/api/stripe', {
       method: 'POST',
       headers: {
@@ -28,10 +30,29 @@ const Cart = () => {
     const data = await response.json();
 
     toast.loading('Redirecting...');
-
+    setPurchaseComplete(true)
     stripe.redirectToCheckout({ sessionId: data.id });
   }
-
+  let _itemPrice = (isOnSale, percent, price) =>{
+    let nav;
+    console.log("on sale")
+    console.log(isOnSale)
+    if(isOnSale){
+      let discountPrice = ( price - (price/100*percent)).toFixed(2)
+      let percentSaved = (price/100*percent).toFixed(2)
+      nav = <>
+        <h4 style={{color: ""}}>Was £{price} Now £{discountPrice}</h4>
+        <h4 style={{color: "red", }}>{percent}% off. saved £{percentSaved}</h4>
+      </>
+    }
+    else{
+     nav = <>
+      <h4>£{price}</h4>
+      </>
+    }
+    
+    return nav
+  }
   return (
     <div className="cart-wrapper" ref={cartRef}>
       <div className="cart-container">
@@ -66,8 +87,8 @@ const Cart = () => {
               <img src={urlFor(item?.image[0])} className="cart-product-image" />
               <div className="item-desc">
                 <div className="flex top">
-                  <h5>{item.name}</h5>
-                  <h4>£{item.price}</h4>
+                  <h5>{item.name}</h5>{}
+                  {_itemPrice(item.isOnSale,item.onSalePercent, item.price)}
                 </div>
                 <div className="flex bottom">
                   <div>

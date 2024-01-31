@@ -4,18 +4,22 @@ import { BsBagCheckFill } from 'react-icons/bs';
 
 import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils';
+import cook from "js-cookie";
 
 const Success = () => {
-  const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
-  
+  const {setCartItems, setTotalPrice, setTotalQuantities, setPurchaseComplete } = useStateContext();
   useEffect(() => {
+    
     localStorage.clear();
     setCartItems([]);
     setTotalPrice(0);
     setTotalQuantities(0);
+    setPurchaseComplete(false)
     runFireworks();
+    cook.remove('cartItems')
   }, []);
 
+  
   return (
     <div className="success-wrapper">
       <div className="success">

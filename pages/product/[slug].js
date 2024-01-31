@@ -7,7 +7,7 @@ import { useStateContext } from '../../context/StateContext';
 import {useRouter} from "next/router";
 
 const ProductDetails = ({ product, products }) => {
-  const { image, name, details, price } = product;
+  const { image, name, details, price, isOnSale,onSalePercent} = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
   const router = useRouter()
@@ -18,6 +18,22 @@ const ProductDetails = ({ product, products }) => {
     setShowCart(true);
   }
 
+  let _price
+  
+  if(isOnSale){
+    let discountPrice = ( price - (price/100*onSalePercent)).toFixed(2)
+    let percentSaved = (price/100*onSalePercent).toFixed(2)
+    let percent = onSalePercent
+     _price = <>
+       <p className="price" style={{color: "red"}}>%{onSalePercent} off. Save £ {percentSaved}</p>
+       <p className="price" style={{color: "red"}}>£{discountPrice}</p>
+      </>
+  }
+  else{
+    _price = <>
+        <p className="price">£{price}</p>
+        </>
+  }
   return (
     <div>
       <HeroBanner/>
@@ -68,7 +84,7 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
-          <p className="price">£{price}</p>
+          {_price}
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">
