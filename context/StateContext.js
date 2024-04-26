@@ -141,7 +141,7 @@ export const StateContext = ({ children }) => {
     const newCartItems = cartItems.filter((item) => item._id !== product._id);
 
    // setTotalPrice((prevTotalPrice) => prevTotalPrice -foundProduct.price * foundProduct.quantity);
-      if(product.isOnSale) {
+      if(foundProduct.isOnSale) {
           let discountPrice = (foundProduct.price - (foundProduct.price / 100 * foundProduct.onSalePercent))
           console.log("discountPrice")
           console.log(discountPrice)
@@ -159,7 +159,8 @@ export const StateContext = ({ children }) => {
     
   }
 
-  const toggleCartItemQuanitity = (id, value) => {
+  const toggleCartItemQuanitity = (id, value, amount = 1) => {
+      console.log("AMOUNT " + amount)
     foundProduct = cartItems.find((item) => item._id === id)
     index = cartItems.findIndex((product) => product._id === id);
     const newCartItems = cartItems.filter((item) => item._id !== id)
@@ -168,32 +169,50 @@ export const StateContext = ({ children }) => {
       setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity + 1 } ]);
         if(foundProduct.isOnSale) {
             let discountPrice = (foundProduct.price - (foundProduct.price / 100 * foundProduct.onSalePercent))
-            console.log("discountPrice")
-            console.log(discountPrice)
             setTotalPrice((prevTotalPrice) => (prevTotalPrice + discountPrice ));
         }
         else{
-            console.log("Norm")
             setTotalPrice((prevTotalPrice) => Math.round((prevTotalPrice + foundProduct.price)*100)/100);
         }
       //setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price)
       setTotalQuantities(prevTotalQuantities => prevTotalQuantities + 1)
     } else if(value === 'dec') {
       if (foundProduct.quantity > 1) {
-        setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 } ]);
-          if(foundProduct.isOnSale) {
-              let discountPrice = (foundProduct.price - (foundProduct.price / 100 * foundProduct.onSalePercent))
-              console.log("discountPrice")
-              console.log(discountPrice)
-              setTotalPrice((prevTotalPrice) => Math.round((prevTotalPrice - discountPrice)*100)/100);
+        setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - amount } ]);
+        
+        var prr = 0
+        cartItems.forEach((item) =>{
+            console.log("item")
+            console.log(item)
+            let quan = item.quantity
+            if (item._id === id)
+                quan = item.quantity - amount
+            for (let i = 0; i < quan; i++) {
+                console.log("prr")
+                console.log(prr)
+                if (item.isOnSale){
+                    prr += item.price - (item.price / 100 * item.onSalePercent).toFixed()
+                }
+                else{
+                    prr+= item.price;
+                }
+            }
+        })
+
+          console.log("PRICEE " + prr)
+          setTotalPrice((prevTotalPrice) => prr)
+         /* if(foundProduct.isOnSale) {
+              let discountPrice = ((foundProduct.price) - (foundProduct.price / 100 * foundProduct.onSalePercent))
+              setTotalPrice((prevTotalPrice) => Math.abs(Math.round(( foundProduct.price - discountPrice)*100)/100));
           }
           else{
-              console.log("Norm")
-              console.log(foundProduct.price)
               setTotalPrice((prevTotalPrice) => Math.round((prevTotalPrice - foundProduct.price)*100)/100);
-          }
+          }*/
         //setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price)
-        setTotalQuantities(prevTotalQuantities => prevTotalQuantities - 1)
+        setTotalQuantities(prevTotalQuantities => prevTotalQuantities - amount)
+      }
+      else if(foundProduct.quantity === 1){
+          onRemove({_id: foundProduct._id})
       }
     }
       console.log("CHANGE")

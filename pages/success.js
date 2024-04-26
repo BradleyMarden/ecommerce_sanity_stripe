@@ -5,10 +5,32 @@ import { BsBagCheckFill } from 'react-icons/bs';
 import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils';
 import cook from "js-cookie";
+import {client} from "../lib/client";
+import {Product} from "../components";
 
-const Success = () => {
-  const {setCartItems, setTotalPrice, setTotalQuantities, setPurchaseComplete } = useStateContext();
+const Success = ({products}) => {
+  const {setCartItems, setTotalPrice, setTotalQuantities, setPurchaseComplete, cartItems} = useStateContext();
   useEffect(() => {
+    let items = []
+    let cartJson = cook.get('cartItems')
+    if (cartJson)
+      items= JSON.parse(cartJson)
+    let ids =[]
+    let quantity =[]
+    items?.map((product) => {
+      console.log("Id " + product._id + "Quan: " + product.quantity)
+      
+      ids.push(product._id)
+      quantity.push(product.quantity)
+    })
+    
+    let ind = 0;
+    
+    ids.forEach((id) =>{
+      console.log("Pushing" + id)
+      client.patch(id).dec({quantity: quantity[ind]}).commit()
+      ind++
+    })
     
     localStorage.clear();
     setCartItems([]);
@@ -42,6 +64,15 @@ const Success = () => {
       </div>
     </div>
   )
+}
+
+export const getServerSideProps = async ({req, res}) => {
+  const query = '*[_type == "product"]';
+  const products = await client.fetch(query);
+
+  return {
+    props: { products}
+  }
 }
 
 export default Success

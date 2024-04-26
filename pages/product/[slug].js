@@ -18,11 +18,20 @@ const ProductDetails = ({ product, products }) => {
     setShowCart(true);
   }
 
+  let buttons = <>
+    <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
+    <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+  </>
+  if (product.quantity <= 0){
+    buttons = <>
+      <p className="price" style={{color: "red"}}>Out of stock :(</p>
+    </>
+  }
   let _price
-  
-  if(isOnSale){
-    let discountPrice = ( price - (price/100*onSalePercent)).toFixed(2)
-    let percentSaved = (price/100*onSalePercent).toFixed(2)
+
+  if (isOnSale) {
+    let discountPrice = (price - (price / 100 * onSalePercent)).toFixed(2)
+    let percentSaved = (price / 100 * onSalePercent).toFixed(2)
     let percent = onSalePercent
      _price = <>
        <p className="price" style={{color: "red"}}>%{onSalePercent} off. Save £ {percentSaved}</p>
@@ -94,8 +103,7 @@ const ProductDetails = ({ product, products }) => {
             </p>
           </div>
           <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+            {buttons}
           </div>
         </div>
       </div>

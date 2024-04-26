@@ -113,7 +113,8 @@ width: 100%;
 }
 .image-carousel-container{
   padding-bottom: 3vh;
-  
+  border-radius: 8px;
+
 }
 .image-carousel{
   display: block;
@@ -124,7 +125,9 @@ width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 3vh;
-  
+  border-radius: 8px;
+  filter: drop-shadow(0px 3px 4px #3c4758);
+
 }
 .about-us-container{
   background-color: #AADCE6;
@@ -149,16 +152,15 @@ width: 100%;
 }
 .carousel-style {
   height: 99% !important;
-  border-color: #3edacf;
-  border-width: 10px;
-  border-style: solid;
-  box-shadow: 0px 5px 5px grey;
-  
+  border-radius: 8px;
+
 }
 
 .carousel-item{
   height: 60vh;
   border-style: solid;
+  border-radius: 8px;
+
 }
 .cont{
   position: absolute;
@@ -407,7 +409,7 @@ width: 100%;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
  color: #324d67;
-  width: 255px;
+  width: 200px;
 }
 .product-card-large:hover{
   transform: scale(1.1,1.1);
@@ -468,7 +470,9 @@ width: 100%;
 .product-name{
   font-weight: 500;
   text-overflow: ellipsis;
-  word-wrap: break-word
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-price{
   font-weight: 800;
@@ -887,7 +891,7 @@ padding: 30px 65px;
   border-radius: 15px;
    background-color: #ebebeb;
 
-  width: 100%;
+  width: 300px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
@@ -1147,12 +1151,15 @@ margin-top: 160px;
     display: flex;
     justify-content: center;
     padding-top: 5vh;
-    
+    border-radius: 8px;
+
   }
   .carousel-style {
     height: 98% !important;
     border-color: #3edacf;
     border-width: 10px;
+    border-radius: 8px;
+
   }
 
   .carousel-item{

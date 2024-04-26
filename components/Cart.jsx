@@ -24,11 +24,63 @@ const Cart = () => {
       },
       body: JSON.stringify(cartItems),
     });
-
+    console.log("adwdad")
     if(response.statusCode === 500) return;
     
     const data = await response.json();
+    
+    console.log("response.body")
+    console.log(data)
+    console.log(response)
+    if(response.status === 401){
+      
+      toast.loading('Items in cart are no longer in stock', {
+        duration: 4000,
+        position: 'top-center',
 
+        // Styling
+        style: {},
+        className: '',
+
+        // Custom Icon
+        icon: '👏',
+
+        // Change colors of success/error/loading icon
+        iconTheme: {
+          primary: '#000',
+          secondary: '#fff',
+        },
+
+        // Aria
+        ariaProps: {
+          role: 'status',
+          'aria-live': 'polite',
+        },
+      });
+
+      console.log("data")
+      console.log(data)
+      var dict = {};
+      
+      
+      if(data){
+        const updatedState = {};
+        
+        data.forEach(async (item) =>{
+          if (!dict[item])
+            dict[item] = 1
+          else
+            dict[item] = dict[item]+1
+        })
+
+      }
+
+      for(var key in dict) {
+        toggleCartItemQuanitity(key, 'dec', dict[key])
+      }      
+
+      return
+    }
     toast.loading('Redirecting...');
     setPurchaseComplete(true)
     stripe.redirectToCheckout({ sessionId: data.id });
